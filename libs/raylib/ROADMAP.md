@@ -1,21 +1,34 @@
-roadmap
--------
+# raylib roadmap
 
-Here it is a wish-list with features and ideas to improve the library. Note that features listed here are quite high-level and could be long term additions for the library. Current version of raylib is complete and functional but there is a lot of room for improvement.
+Here it is a wishlist with features and ideas to improve the library. Note that features listed here are usually long term improvements or just describe a route to follow for the library. There are also some additional places to look for raylib improvements and ideas:
 
-[raylib source code](https://github.com/raysan5/raylib/tree/master/src) has some *TODO* marks around code with pending things to review and improve. Check also [GitHub Issues](https://github.com/raysan5/raylib/issues) for further details!
+ - [GitHub Issues](https://github.com/raysan5/raylib/issues) has several open issues for possible improvements or bugs to fix.
+ - [raylib source code](https://github.com/raysan5/raylib/tree/master/src) has multiple *TODO* comments around code with pending things to review or improve. 
+ - raylib wishlists discussions (https://github.com/raysan5/raylib/discussions/1502, https://github.com/raysan5/raylib/discussions/2272) are open to everyone to ask for improvements, feel free to check and comment.
 
-**raylib 3.x**
- - [ ] Network module (UDP): `rnet` ([info](https://github.com/raysan5/raylib/issues/753))
- - [ ] Custom raylib resource packer: `rres` ([info](https://github.com/raysan5/rres))
- - [ ] Basic CPU/GPU stats system (memory, draws, time...)
- - [ ] Continuous Deployment using GitHub Actions
+_Current version of raylib is complete and functional but there is always room for improvements._
+
+**raylib 4.x**
+ - [ ] Redesign camera module (more flexible) ([#1143](https://github.com/raysan5/raylib/issues/1143), https://github.com/raysan5/raylib/discussions/2507)
+ - [ ] Redesign gestures system, improve touch inputs management
+ - [ ] Redesign raudio module, implement miniaudio high-level provided features
+ - [x] Better documentation and improved examples
+ - [x] Focus on HTML5 ([raylib 5k gamejam](https://itch.io/jam/raylib-5k-gamejam)) and embedded platforms (RPI and similar SOCs)
+ - [x] Additional support libraries: [raygui](https://github.com/raysan5/raygui), [rres](https://github.com/raysan5/rres)
+
+**raylib 4.0**
+ - [x] Improved consistency and coherency in raylib API
+ - [x] Continuous Deployment using GitHub Actions
+ - [x] rlgl improvements for standalone usage (avoid raylib coupling)
+ - Basic CPU/GPU stats system (memory, draws, time...) ([#1295](https://github.com/raysan5/raylib/issues/1295)) - _DISCARDED_
+ - Software rendering backend (avoiding OpenGL) ([#1370](https://github.com/raysan5/raylib/issues/1370)) - _DISCARDED_
+ - Network module (UDP): `rnet` ([#753](https://github.com/raysan5/raylib/issues/753)) - _DISCARDED_ - Use [nbnet](https://github.com/nathhB/nbnet).
  
  **raylib 3.0**
  - [x] Custom memory allocators support
  - [x] Global variables moved to global context
  - [x] Optimize data structures for pass-by-value
- - [x] Trace log messages redesign ([info](https://github.com/raysan5/raylib/issues/1065))
+ - [x] Trace log messages redesign ([#1065](https://github.com/raysan5/raylib/issues/1065))
  - [x] Continuous Integration using GitHub Actions
  
 **raylib 2.5**
